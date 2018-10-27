@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 	public class Server {
 	    
-		public static void main(String ...strings) throws IOException {
+		public static void main(String ... strings) throws IOException {
 	
 			ServerSocket serverSocket = new ServerSocket(6969);
 			System.out.println("Server is up and running");
@@ -36,14 +36,13 @@ import java.util.Scanner;
 					
 		
 					PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
-	                out.println(message);
+	               			out.println(message);
 	              
 				}
 				
 			}
 			
 		}
-		
 	}
 	
 	
